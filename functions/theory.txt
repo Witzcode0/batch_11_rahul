@@ -1,0 +1,89 @@
+A function is a named block of code that performs a specific task. A function can take inputs (called parameters), execute a block of statements, and optionally return a result.
+
+syntax:
+
+data_type function_name(para1,para2,...paran){
+    //code of block
+}
+
+// function call
+function_name(val1,val2, ..., valn)
+
+void main(){
+
+}
+
+Types of functions
+- built-in function - printf, scanf, sizeof
+- user define function
+
+int a = 10, b = 20;
+
+int res = a + b;
+
+printf("%d", res);
+
+int a = 540, b = 260;
+
+int res = a + b;
+
+printf("%d", res);
+
+
+void sum(int a, int b){
+    int res = a + b;
+    printf("%d", res);
+}
+
+sum(10, 20);
+sum(540, 260);
+
+
+with return_type and with parameters
+#include <stdio.h>
+
+int sum(int num1, int num2){
+    return num1 + num2;
+}
+
+void main() {
+    printf("Total = %d", sum(10, 20) + 5);
+}
+------------------------------------
+with return_type and without parameters
+---------------------------------------
+#include <stdio.h>
+
+float PIVALUES(){
+    float pi = 3.14;
+    return pi;
+}
+
+void main() {
+    printf("PI = %.2f", PIVALUES());
+}
+without return_type and with parameters
+---------------------------------------
+#include <stdio.h>
+
+void sum(int num1, int num2){
+    printf("total = %d\n", num1 + num2);
+}
+
+void main() {
+    sum(10, 20);
+    sum(100, 230);
+    sum(500, 250);
+}
+without return_type and without
+---------------------------------------
+#include <stdio.h>
+
+void PIVALUES(){
+    float pi = 3.14;
+    printf("PI = %.2f", pi);
+}
+
+void main() {
+    PIVALUES();
+}
